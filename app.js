@@ -17,7 +17,7 @@ app.use('/api/heroes', heroRouter);
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
 
-mongoose.connect("mongodb://localhost/herodb", {useNewUrlParser: true, useUnifiedTopology: true})
+mongoose.connect("mongodb+srv://user:user%40123@cluster0-ytx8s.mongodb.net/herodb?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true})
 .then(() => {
     console.log("Database Connection Established.!")
 }).catch(error => {
